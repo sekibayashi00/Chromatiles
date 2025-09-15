@@ -1,0 +1,27 @@
+{
+  "name": "com.unity.burst",
+  "displayName": "Burst",
+  "version": "1.8.19",
+  "unity": "2020.3",
+  "description": "Burst is a compiler that translates from IL/.NET bytecode to highly optimized native code using LLVM.",
+  "dependencies": {
+    "com.unity.mathematics": "1.2.1",
+    "com.unity.modules.jsonserialize": "1.0.0"
+  },
+  "relatedPackages": {
+    "com.unity.burst.tests": "1.8.19"
+  },
+  "_upm": {
+    "changelog": "### Changed\n- Source file checksums are now included in pdb debugging files, so that Visual Studio can warn when source files differ from when the pdb was built\n- Added support for `HashCode.Combine`\n\n### Fixed\n- Fixed hash generation error for derived default interface methods\n- Fixed resolution of local variable types in generic default interface methods\n- Fixed crash that could occur when a target method of `BurstCompiler.CompileFunctionPointer` was already decorated with `[MonoPInvokeCallback]`. If this existing attribute existed in a namespace other than `AOT`, Burst's IL postprocessor would add a second `[MonoPInvokeCallback]`, resulting in a runtime crash on IL2CPP.\n- Fix crash when trying to Burst compile a project without any Bursted code with debug info enabled, when it has already been compiled without debug info before.\n- Fixed `BC1055: Unable to resolve the definition of the method ...` errors when compiling code using `in` method parameters for multiple CPU targets\n- Fixed an issue preventing debugging of managed methods that use direct call, regardless of whether Burst compilation is manually disabled\n- Fixed a rare concurrency issue in the entry point finder.\n\n### Added\n- [Android] Support for 16Kb page sizes\n\n### Removed\n\n### Known Issues"
+  },
+  "upmCi": {
+    "footprint": "136d8fada35545b1c7494f1a676e104c0203ac99"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/burst.git",
+    "type": "git",
+    "revision": "6498e90e8843e51fdb3a37b709a1f1e4b86d3e57"
+  },
+  "_fingerprint": "7a907cf5a4591e4e25f4203e3be84f240058c34d"
+}
