@@ -1,2 +1,3 @@
 # ignore large file
 Library\PackageCache\com.unity.burst@7a907cf5a459\.Runtime\libburst-llvm-18.dylib
+Library/PackageCache/com.unity.burst@7a907cf5a459/.Runtime/libburst-llvm-18.dylib
