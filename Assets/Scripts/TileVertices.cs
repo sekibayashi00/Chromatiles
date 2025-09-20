@@ -38,6 +38,11 @@ public class TileVertices : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        transform.position += Vector3.up * 0.2f;
+    }
+
     void TileGrabbed()
     {
         PlacedVertices.Instance.RemoveShape(shape);

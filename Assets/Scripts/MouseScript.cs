@@ -26,6 +26,7 @@ public class MouseScript : MonoBehaviour
     {
         Vector2 screenPos = Mouse.current.position.ReadValue();
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 1.0f));
+        worldPos.y = 0.0f;
         transform.position = worldPos;
         
         if (holdingTile && heldTile != null)

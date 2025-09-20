@@ -1,6 +1,6 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/dazza/ChromatilesProto/Packages/manifest.json
+    m_FilePath: C:/git/Chromatiles/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -8,7 +8,7 @@ m_ProjectFiles:
       ticks: 638934146763921669
     m_Hash: 2391457520
   m_LockFileStatus:
-    m_FilePath: C:/Users/dazza/ChromatilesProto/Packages/packages-lock.json
+    m_FilePath: C:/git/Chromatiles/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -19,7 +19,7 @@ m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/dazza/ChromatilesProto/Packages
+m_ProjectPath: C:/git/Chromatiles/Packages
 m_EditorVersion: 6000.0.40f1 (157d81624ddf)
 m_ResolvedPackages:
 - packageId: com.unity.ai.navigation@2.0.6
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.6
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.ai.navigation@c74b2724ed42
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.ai.navigation@c74b2724ed42
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -151,7 +151,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.9.3
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -322,7 +322,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.31
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.ide.rider@7921be93db40
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.ide.rider@7921be93db40
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -385,14 +385,17 @@ m_ResolvedPackages:
     - 3.0.35
     - 3.0.36
     - 3.0.37
+    - 3.0.38
     compatible:
     - 3.0.31
     - 3.0.34
     - 3.0.35
     - 3.0.36
     - 3.0.37
-    recommended: 3.0.37
-    deprecated: []
+    - 3.0.38
+    recommended: 3.0.38
+    deprecated:
+    - 3.0.37
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -447,7 +450,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.22
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -555,7 +558,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.13.0
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.inputsystem@ea5ab5b33a26
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.inputsystem@ea5ab5b33a26
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -716,7 +719,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -806,7 +809,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.4
   source: 2
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.render-pipelines.universal@bd2aa618476e
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.render-pipelines.universal@bd2aa618476e
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -968,7 +971,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.4.6
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.test-framework@5ac417e07314
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.test-framework@5ac417e07314
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -1120,7 +1123,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.7
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.timeline@c58b4ee65782
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.timeline@c58b4ee65782
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1308,7 +1311,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.ugui@03407c6d8751
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.ugui@03407c6d8751
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1403,7 +1406,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.5
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -3947,7 +3950,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -4026,7 +4029,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.4
   source: 2
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.render-pipelines.core@481f548ebf36
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.render-pipelines.core@481f548ebf36
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -4240,7 +4243,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.4
   source: 2
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.shadergraph@425e21ee5890
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.shadergraph@425e21ee5890
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -4443,7 +4446,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal RP Config
@@ -4541,7 +4544,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.9.3
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.searcher@1e17ce91558d
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.searcher@1e17ce91558d
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -4628,7 +4631,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.19
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.burst@7a907cf5a459
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.burst@7a907cf5a459
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -4782,6 +4785,7 @@ m_ResolvedPackages:
     - 1.8.22
     - 1.8.23
     - 1.8.24
+    - 1.8.25
     compatible:
     - 1.8.19
     - 1.8.20
@@ -4789,7 +4793,8 @@ m_ResolvedPackages:
     - 1.8.22
     - 1.8.23
     - 1.8.24
-    recommended: 1.8.24
+    - 1.8.25
+    recommended: 1.8.25
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -4862,7 +4867,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.2
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.mathematics@8017b507cc74
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -4951,7 +4956,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.5.1
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.collections@56bff8827a7e
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.collections@56bff8827a7e
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -5130,7 +5135,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.1
   source: 2
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f
   assetPath: Packages/com.unity.rendering.light-transport
   name: com.unity.rendering.light-transport
   displayName: Unity Light Transport Library
@@ -5226,7 +5231,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.11.4
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -5308,7 +5313,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.0.3
   source: 1
-  resolvedPath: C:\Users\dazza\ChromatilesProto\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
+  resolvedPath: C:\git\Chromatiles\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -5375,9 +5380,11 @@ m_ResolvedPackages:
     - 3.0.2
     - 3.0.3
     - 3.1.0
+    - 3.2.0
     compatible:
     - 3.0.3
     - 3.1.0
+    - 3.2.0
     recommended: 3.0.3
     deprecated: []
   dependencies:

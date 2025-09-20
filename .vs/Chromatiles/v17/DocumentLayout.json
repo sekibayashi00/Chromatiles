@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\git\\Chromatiles\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2609E558-1928-287C-67D4-BA5505B429A1}|Assembly-CSharp.csproj|c:\\git\\chromatiles\\assets\\scripts\\tilevertices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2609E558-1928-287C-67D4-BA5505B429A1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tilevertices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2609E558-1928-287C-67D4-BA5505B429A1}|Assembly-CSharp.csproj|c:\\git\\chromatiles\\assets\\scripts\\mousescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2609E558-1928-287C-67D4-BA5505B429A1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mousescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TileVertices.cs",
+              "DocumentMoniker": "C:\\git\\Chromatiles\\Assets\\Scripts\\TileVertices.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TileVertices.cs",
+              "ToolTip": "C:\\git\\Chromatiles\\Assets\\Scripts\\TileVertices.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TileVertices.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T07:09:47.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MouseScript.cs",
+              "DocumentMoniker": "C:\\git\\Chromatiles\\Assets\\Scripts\\MouseScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MouseScript.cs",
+              "ToolTip": "C:\\git\\Chromatiles\\Assets\\Scripts\\MouseScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MouseScript.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T07:04:54.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
