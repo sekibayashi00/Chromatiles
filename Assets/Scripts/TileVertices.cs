@@ -8,6 +8,8 @@ public class TileVertices : MonoBehaviour
     private TileShape shape;
     private PlacedVertices vertManager;
     public bool isGrabbed = false;
+    public bool flippable = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +36,12 @@ public class TileVertices : MonoBehaviour
             {
                 Debug.Log("Wheel down");
                 transform.Rotate(0, 5.0f, 0);
+            }
+
+            if(Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                Debug.Log("Right mouse button clicked");
+                if (flippable) transform.Rotate(180.0f, 0.0f, 0.0f); // flip tile
             }
         }
     }
