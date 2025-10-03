@@ -55,7 +55,7 @@ MonoBehaviour:
   tileSpawnOffset: {x: -3, y: 0, z: 0}
   tileSpacing: 1.5
   victoryDelay: 2
-  autoResetOnVictory: 0
+  autoResetOnVictory: 1
   victorySound: {fileID: 0}
   placeTileSound: {fileID: 0}
   resetSound: {fileID: 0}

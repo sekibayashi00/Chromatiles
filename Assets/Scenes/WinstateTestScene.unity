@@ -964,7 +964,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2761482129282630484, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
       propertyPath: autoResetOnVictory
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2761482129282630484, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
       propertyPath: 'tilePrefabs.Array.data[0]'

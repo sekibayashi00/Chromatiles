@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
 
         SetupLevel();
-        //SetupTestLevel();
+        // SetupTestLevel();
     }
 
     void Update()
@@ -114,6 +114,11 @@ public class GameManager : MonoBehaviour
         {
             if (tile != null)
             {
+                // Remove the shape from 'PlacedVertices' manager to avoid references to a destroyed Transform
+                if (PlacedVertices.Instance == null) Debug.Log("[GameManager] Could not find an instance of static class PlacedVertices");
+                TileShape tileShape = tile.GetComponent<TileShape>();
+                PlacedVertices.Instance.RemoveShape(tileShape);
+
                 Destroy(tile);
             }
         }
@@ -259,6 +264,11 @@ public class GameManager : MonoBehaviour
         {
             if (tile != null)
             {
+                // Remove the shape from 'PlacedVertices' manager to avoid references to a destroyed Transform
+                if (PlacedVertices.Instance == null) Debug.Log("[GameManager] Could not find an instance of static class PlacedVertices");
+                TileShape tileShape = tile.GetComponent<TileShape>();
+                PlacedVertices.Instance.RemoveShape(tileShape);
+
                 Destroy(tile);
             }
         }

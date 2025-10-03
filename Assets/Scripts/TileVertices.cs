@@ -15,32 +15,32 @@ public class TileVertices : MonoBehaviour
     {
         shape = GetComponent<TileShape>();
 
-        //GetVertexManager();
+        // GetVertexManager();
         TilePlaced();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log($"Vertex Manager is {PlacedVertices.Instance}");
+        // Debug.Log($"Vertex Manager is {PlacedVertices.Instance}");
 
         // allow rotation with mouse wheel if grabbed
         if(isGrabbed)
         {
-            //Debug.Log($"Mouse wheel axis: {Input.GetAxis("Mouse ScrollWheel")}");
+            // Debug.Log($"Mouse wheel axis: {Input.GetAxis("Mouse ScrollWheel")}");
             if (Input.GetAxis("Mouse ScrollWheel") == 0.1f)
             {
-                //Debug.Log("Wheel up");
+                // Debug.Log("Wheel up");
                 transform.Rotate(0, -5.0f, 0);
             } else if (Input.GetAxis("Mouse ScrollWheel") == -0.1f)
             {
-                //Debug.Log("Wheel down");
+                // Debug.Log("Wheel down");
                 transform.Rotate(0, 5.0f, 0);
             }
 
             if(Input.GetKeyDown(KeyCode.Mouse1))
             {
-                //Debug.Log("Right mouse button clicked");
+                // Debug.Log("Right mouse button clicked");
                 if (flippable) transform.Rotate(180.0f, 0.0f, 0.0f); // flip tile
             }
         }
@@ -65,13 +65,13 @@ public class TileVertices : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //Debug.Log("Mouse clicked!");
+        // Debug.Log("Mouse clicked!");
         TileGrabbed();
     }
 
     private void OnMouseUp()
     {
-        //Debug.Log("Mouse released");
+        // Debug.Log("Mouse released");
         TilePlaced();
     }
 }
