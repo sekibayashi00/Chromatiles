@@ -987,6 +987,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1979183018}
     - target: {fileID: 4601007922727000331, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
+      propertyPath: checkDelay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4601007922727000331, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
       propertyPath: 'targetOutlineTileObjects.Array.data[0]'
       value: 
       objectReference: {fileID: 490827523}

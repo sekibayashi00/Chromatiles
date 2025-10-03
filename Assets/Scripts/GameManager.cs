@@ -216,7 +216,10 @@ public class GameManager : MonoBehaviour
                 }
 
                 // Optional: Add visual feedback (bounce, glow, etc.)
-                StartCoroutine(VictoryTileBounce(tile));
+                // StartCoroutine(VictoryTileBounce(tile));     DEPRECIATED - THIS ACHIEVES NOTHING DUE TO TOP-DOWN PERSPECTIVE SHOWING NO CHANGE IN Y-POS
+
+                // New visual feedback - general class for scale - can be extended in future
+                StartCoroutine(VictoryTileFeedback(tile));
             }
         }
 
@@ -229,24 +232,34 @@ public class GameManager : MonoBehaviour
         isVictorySequencePlaying = false;
     }
 
-    private IEnumerator VictoryTileBounce(GameObject tile)
+    /// <summary>
+    /// Scale tile size in a 'pulse'
+    /// This replaces the original "VictoryTileBounce" script which achieved nothing due to y-level not showing from a top-down perspective
+    /// </summary>
+    private IEnumerator VictoryTileFeedback(GameObject tile)
     {
         if (tile == null) yield break;
 
-        Vector3 originalPos = tile.transform.position;
-        float bounceHeight = 0.3f;
-        float bounceSpeed = 3f;
-        float elapsed = 0f;
+        Vector3 originalScale = tile.transform.localScale;
 
-        while (elapsed < 1f)
+        float scaleAmp = 0.18f;     // 18% scale increase
+        float elapsed = 0.0f;
+        float duration = 1.0f;
+
+        while (elapsed < duration)
         {
-            elapsed += Time.deltaTime * bounceSpeed;
-            float bounce = Mathf.Sin(elapsed * Mathf.PI) * bounceHeight;
-            tile.transform.position = originalPos + Vector3.up * bounce;
+            if (tile == null) yield break; // tile can be destroyed by game reset during co-routine, break out of loop if so
+
+            elapsed += Time.deltaTime;
+            float percentage = elapsed / duration;
+
+            // Pulse scale smoothly using Sin(t) function
+            float pulse = 1.0f + Mathf.Sin(percentage * Mathf.PI) * scaleAmp;
+            tile.transform.localScale = originalScale * pulse;
             yield return null;
         }
 
-        tile.transform.position = originalPos;
+        tile.transform.localScale = originalScale;
     }
 
     public void ResetLevel()
@@ -280,16 +293,16 @@ public class GameManager : MonoBehaviour
             if (state.prefabIndex < tilePrefabs.Count && tilePrefabs[state.prefabIndex] != null)
             {
                 GameObject tile = Instantiate(
-                    tilePrefabs[state.prefabIndex], 
-                    state.position, 
-                    state.rotation, 
+                    tilePrefabs[state.prefabIndex],
+                    state.position,
+                    state.rotation,
                     tileSpawnParent
                 );
                 tile.transform.localScale = state.scale;
                 currentTiles.Add(tile);
             }
         }
-        
+
         currentTilesGrabbed = new List<bool>(currentTiles.Count);
         for (int i = 0; i < currentTiles.Count; i++) currentTilesGrabbed.Add(false);
 

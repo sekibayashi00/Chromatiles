@@ -73,7 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkOutline: 1
   checkColors: 0
-  checkDelay: 0.5
+  checkDelay: 0.1
   targetOutlineTileObjects:
   - {fileID: 0}
   - {fileID: 0}

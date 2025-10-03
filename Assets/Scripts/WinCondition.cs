@@ -10,7 +10,7 @@ public class WinCondition : MonoBehaviour
     [Header("Win Condition Settings")]
     public bool checkOutline = true;
     public bool checkColors = true;
-    public float checkDelay = 0.5f; // Delay before checking after tile placement
+    public float checkDelay = 0.1f; // Delay before checking after tile placement
     
     [Header("Outline Matching")]
     private List<Vector2> targetOutlinePoints = new List<Vector2>();    // changed to private, we get the points from the below list of game objects
