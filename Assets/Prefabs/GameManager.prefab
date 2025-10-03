@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7362457100306798595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6070367585493323571}
+  - component: {fileID: 2761482129282630484}
+  - component: {fileID: 4601007922727000331}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6070367585493323571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362457100306798595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2761482129282630484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362457100306798595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3307fee7a69af164ebf713a66bf64003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilePrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tileSpawnParent: {fileID: 6070367585493323571}
+  tileSpawnOffset: {x: -3, y: 0, z: 0}
+  tileSpacing: 1.5
+  victoryDelay: 2
+  autoResetOnVictory: 0
+  victorySound: {fileID: 0}
+  placeTileSound: {fileID: 0}
+  resetSound: {fileID: 0}
+--- !u!114 &4601007922727000331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362457100306798595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2597ad5f369232e4fa7e42d6e8a3425c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkOutline: 1
+  checkColors: 0
+  checkDelay: 0.5
+  targetOutlineTileObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  targetPointFilterThreshold: 0.01
+  outlineMatchThreshold: 0.1
+  requiredOutlineMatchPercentage: 0.8
+  colorTargets: []
+  colorMatchTolerance: 0.15
+  showDebugVisuals: 1
+  logDetailedInfo: 0
+  onWinConditionMet:
+    m_PersistentCalls:
+      m_Calls: []
+  onWinConditionFailed:
+    m_PersistentCalls:
+      m_Calls: []

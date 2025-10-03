@@ -26,6 +26,12 @@ public class GameManager : MonoBehaviour
     private AudioSource audioSource;
     private bool isVictorySequencePlaying = false;
 
+
+    // Track states of tiles for checking placement (and subsequently checking winstate)
+    // Matches indices of 'currentTiles'
+    private List<bool> currentTilesGrabbed = new List<bool>();
+
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -57,7 +63,13 @@ public class GameManager : MonoBehaviour
         }
 
         SetupLevel();
-        SetupTestLevel();
+        //SetupTestLevel();
+    }
+
+    void Update()
+    {
+        // Continously monitor tiles to see if they are released
+        MonitorTiles();
     }
 
     void OnDestroy()
@@ -66,6 +78,32 @@ public class GameManager : MonoBehaviour
         if (WinCondition.Instance != null)
         {
             WinCondition.Instance.onWinConditionMet.RemoveListener(OnVictory);
+        }
+    }
+
+    // Update the currentTilesGrabbed list from the tiles we have in the current game - tracking their grab/release state
+    private void MonitorTiles()
+    {
+        if (isVictorySequencePlaying) return; // Don't check during victory sequence 
+
+        for (int i = 0; i < currentTiles.Count; i++)
+        {
+            // For each tracked tile in the game scene
+            GameObject tile = currentTiles[i];
+            TileVertices tileVertices = tile.GetComponent<TileVertices>();
+
+            // Check its previous grab state
+            bool currentlyGrabbed = tileVertices.isGrabbed;
+            bool previouslyGrabbed = currentTilesGrabbed[i];
+            // If the tile was previously grabbed and currently is not (i.e. it was just released)
+            if (previouslyGrabbed && !currentlyGrabbed)
+            {
+                // Trigger tile place and win-state check
+                OnTilePlaced();
+            }
+
+            // Update tile state for this tile index 'i'
+            currentTilesGrabbed[i] = currentlyGrabbed;
         }
     }
 
@@ -81,7 +119,7 @@ public class GameManager : MonoBehaviour
         }
         currentTiles.Clear();
         initialTileStates.Clear();
-        
+
         // Spawn tiles
         for (int i = 0; i < tilePrefabs.Count; i++)
         {
@@ -105,6 +143,9 @@ public class GameManager : MonoBehaviour
             };
             initialTileStates.Add(state);
         }
+
+        currentTilesGrabbed = new List<bool>(currentTiles.Count);
+        for (int i = 0; i < currentTiles.Count; i++) currentTilesGrabbed.Add(false);
 
         Debug.Log($"✓ Level setup complete with {currentTiles.Count} tiles");
     }
@@ -238,6 +279,9 @@ public class GameManager : MonoBehaviour
                 currentTiles.Add(tile);
             }
         }
+        
+        currentTilesGrabbed = new List<bool>(currentTiles.Count);
+        for (int i = 0; i < currentTiles.Count; i++) currentTilesGrabbed.Add(false);
 
         Debug.Log("✓ Level reset complete");
     }
