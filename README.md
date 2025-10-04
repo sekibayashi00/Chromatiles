@@ -12,6 +12,13 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
 - **Worksheet 2** [[File submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Feedback and Balance Worksheet & Checklist
 - **AGILE Documentation** [[Discussion Forum on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/lms/discussions/messageLists/frame.d2l?ou=1544115&tId=973841&fId=0&threadId=0&postId=0&groupFilterOption=0)] - Weekly submissions showing progress *(Assessment 2 Group 3)*
 - **Chromatiles.exe** [[Game submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Executable game build packaged in .zip
+  - Extract the .zip file, then run the *Chromatiles.exe* program
+  - You will likely get a Windows Defender pop-up:
+    <div style="display: grid; grid-template-columns: repeat(2, 1); gap: 10px;">
+      <img width="250" alt="Click 'More info'" src="Screenshots/how-to-run1.jpg" />
+      <img width="250" alt="Click 'Run anyway'" src="Screenshots/how-to-run2.jpg" />
+    </div>
+  - Select "More info" > "Run anyway"
 - **Unity Project** [[Game submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Chromatiles project (only Assets and ProjectSettings files uploaded to CloudDeakin due to filesize limits)
 - **Video Demo** [[Panopto](https://deakin.au.panopto.com/Panopto/Pages/Viewer.aspx?id=cd74722c-089a-44ad-a6c0-b36c00ae62f1)] - Video showing gameplay and solutions to each puzzle
   *Uploader for all CloudDeakin items: Daniel Soutar, s223387609*
