@@ -14,7 +14,7 @@ public class WinCondition : MonoBehaviour
     
     [Header("Outline Matching")]
     private List<Vector2> targetOutlinePoints = new List<Vector2>();    // changed to private, we get the points from the below list of game objects
-    public List<GameObject> targetTileObjects = new List<GameObject>(); // List of game objects defining the target shape and colour - should all have "TileVertices" components
+    public List<GameObject> targetTileObjects = new List<GameObject>(); // List of game objects defining the target shape and color - should all have "TileVertices" components
     public float targetPointFilterThreshold = 0.01f;    // When removing duplicate points from target shape, filter out points closer than this distance
 
     public float outlineMatchThreshold = 0.1f;
@@ -29,9 +29,9 @@ public class WinCondition : MonoBehaviour
     public bool showDebugVisuals = true;
     public bool logDetailedInfo = false;
     
-    [Header("Events")]
-    public UnityEvent onWinConditionMet;
-    public UnityEvent onWinConditionFailed;
+    // Changed to hidden since these are only public for global reference purposes, and do not need to be assigned in inspector
+    [HideInInspector]public UnityEvent onWinConditionMet;
+    [HideInInspector]public UnityEvent onWinConditionFailed;
     
     private bool isChecking = false;
     private bool lastCheckResult = false;
@@ -53,9 +53,7 @@ public class WinCondition : MonoBehaviour
         // Get the target outline from the TileShape components in the target objects
         GetTargetOutlinePointsFromObjects();
 
-        // Get the target colour - TO ADD ...
-
-        // Remove the target objects from the scene after getting their points and colours
+        // Remove the target objects from the scene after getting their points and colors
         foreach (GameObject targetTile in targetTileObjects)
         {
             TileShape tileShape = targetTile.GetComponent<TileShape>();
@@ -86,7 +84,7 @@ public class WinCondition : MonoBehaviour
     /// </summary>
     public void GetTargetOutlinePointsFromObjects()
     {
-        targetOutlinePoints.Clear();
+        ClearOutline();
         if (targetTileObjects == null || targetTileObjects.Count == 0)
         {
             Debug.LogWarning("[WinCondition] No winstate defined due to zero target tile objects.");
@@ -358,27 +356,41 @@ public class WinCondition : MonoBehaviour
                 // Check if the position is inside this tile's polygon
                 if (IsPointInsideTilePolygon(position, tile))
                 {
+                    // if (logDetailedInfo) Debug.Log($"[SampleColorAtPosition] Sampling color at position {position} for tile {tile.name}");
+
                     // Get the tile's color from its material
                     MeshRenderer renderer = tile.GetComponent<MeshRenderer>();
                     if (renderer != null && renderer.material != null)
                     {
+                        Color tileColor = Color.black;
+
+                        // ADDED FIX: Need to ensure shader properties match here - shader originally had "colour" spelling, while "color" was used here.
+                        // All references to 'colour' have been changed to 'color', including the shader code.
+
                         // Try to get color from common shader properties
                         if (renderer.material.HasProperty("_BaseColor"))
                         {
-                            Color tileColor = renderer.material.GetColor("_BaseColor");
-                            // Additive color mixing
-                            combinedColor.r += tileColor.r;
-                            combinedColor.g += tileColor.g;
-                            combinedColor.b += tileColor.b;
+                            tileColor = renderer.material.GetColor("_BaseColor");
                         }
                         else if (renderer.material.HasProperty("_Color"))
                         {
-                            Color tileColor = renderer.material.GetColor("_Color");
-                            combinedColor.r += tileColor.r;
-                            combinedColor.g += tileColor.g;
-                            combinedColor.b += tileColor.b;
+                            tileColor = renderer.material.GetColor("_Color");
                         }
+                        else
+                        {
+                            if (logDetailedInfo) Debug.LogError($"[SampleColorAtPosition] Could not get color at position {position} for tile {tile.name} - no shader property found");
+                            return combinedColor;
+                        }
+
+                        // Additive color mixing
+                        combinedColor.r += tileColor.r;
+                        combinedColor.g += tileColor.g;
+                        combinedColor.b += tileColor.b;
                     }
+                }
+                else
+                {
+                    // if (logDetailedInfo) Debug.Log($"[SampleColorAtPosition] Tile {tile.name} does not touch position {position}");
                 }
             }
         }
@@ -397,6 +409,7 @@ public class WinCondition : MonoBehaviour
         TileShape shape = tile.GetComponent<TileShape>();
         if (shape == null || shape.vertTransforms == null || shape.vertTransforms.Count < 3)
         {
+            if (logDetailedInfo) Debug.Log($"[IsPointInsideTilePolygon] Tile {tile.name} with shape {shape.name} is null/missing vertices.");
             return false;
         }
 
@@ -429,6 +442,22 @@ public class WinCondition : MonoBehaviour
                 inside = !inside;
             }
         }
+
+        /*if (logDetailedInfo) // was for troubleshooting issues with point-in-polygon checks
+        {
+            if (inside)
+            {
+                Debug.Log($"[IsPointInPolygon] Point {point.x},{point.y} is inside polygon {polygon}");
+            }
+            else
+            {
+                Debug.Log($"[IsPointInPolygon] Point {point.x},{point.y} is NOT inside polygon: ");
+                for (int i = 0; i < polygon.Count; j = i++)
+                {
+                    Debug.Log($"[IsPointInPolygon] Polygon vertex {i}: {polygon[i].x},{polygon[i].y}");
+                }
+            }
+        }*/
 
         return inside;
     }
