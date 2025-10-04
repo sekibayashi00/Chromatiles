@@ -14,7 +14,7 @@ public class WinCondition : MonoBehaviour
     
     [Header("Outline Matching")]
     private List<Vector2> targetOutlinePoints = new List<Vector2>();    // changed to private, we get the points from the below list of game objects
-    public List<GameObject> targetOutlineTileObjects = new List<GameObject>();  // List of game objects defining the target shape - should all have "TileVertices" components
+    public List<GameObject> targetTileObjects = new List<GameObject>(); // List of game objects defining the target shape and colour - should all have "TileVertices" components
     public float targetPointFilterThreshold = 0.01f;    // When removing duplicate points from target shape, filter out points closer than this distance
 
     public float outlineMatchThreshold = 0.1f;
@@ -52,6 +52,16 @@ public class WinCondition : MonoBehaviour
     {
         // Get the target outline from the TileShape components in the target objects
         GetTargetOutlinePointsFromObjects();
+
+        // Get the target colour - TO ADD ...
+
+        // Remove the target objects from the scene after getting their points and colours
+        foreach (GameObject targetTile in targetTileObjects)
+        {
+            TileShape tileShape = targetTile.GetComponent<TileShape>();
+            PlacedVertices.Instance.RemoveShape(tileShape);
+            Destroy(targetTile, 0.1f);
+        }
     }
 
     void Update()
@@ -77,14 +87,14 @@ public class WinCondition : MonoBehaviour
     public void GetTargetOutlinePointsFromObjects()
     {
         targetOutlinePoints.Clear();
-        if (targetOutlineTileObjects == null || targetOutlineTileObjects.Count == 0)
+        if (targetTileObjects == null || targetTileObjects.Count == 0)
         {
             Debug.LogWarning("[WinCondition] No winstate defined due to zero target tile objects.");
             return;
         }
 
         List<Vector2> targetUnfilteredPoints = new List<Vector2>();
-        foreach (GameObject targetTile in targetOutlineTileObjects)
+        foreach (GameObject targetTile in targetTileObjects)
         {
             // Get the shape of the target tile
             TileShape shape = targetTile.GetComponent<TileShape>();
@@ -330,6 +340,8 @@ public class WinCondition : MonoBehaviour
                 }
             }
         }
+
+        Debug.Log($"Total tiles: {allTiles.Length}");
 
         return vertices;
     }
