@@ -51,9 +51,25 @@ MonoBehaviour:
   tileSpacing: 0.67
   victoryDelay: 2
   autoResetOnVictory: 1
-  victorySound: {fileID: 0}
-  placeTileSound: {fileID: 0}
-  resetSound: {fileID: 0}
+  victorySounds:
+  - {fileID: 8300000, guid: 0773b8d65d82089448cfe1f976414721, type: 3}
+  - {fileID: 8300000, guid: 21891e43bcfcd2d47bc925078d2fdf2e, type: 3}
+  - {fileID: 8300000, guid: 40421e4e4b9aaca4f9582292a766ce6a, type: 3}
+  - {fileID: 8300000, guid: 05d0fcef38a43724e9a5e839edc78ccb, type: 3}
+  placeTileSounds:
+  - {fileID: 8300000, guid: ca02b2177f2a11d43891fc50f14585a5, type: 3}
+  - {fileID: 8300000, guid: a23bf60cca3da654d9382dcc1a4d7aaa, type: 3}
+  - {fileID: 8300000, guid: 5f5f6594d663e1f4e8b18c84c117016b, type: 3}
+  - {fileID: 8300000, guid: df2ee3a2d9fe14b42bb0acaaa8a0db52, type: 3}
+  - {fileID: 8300000, guid: 68d68aaf15c338b42968e0abb68dda6b, type: 3}
+  - {fileID: 8300000, guid: eb5da0ec0d8555444b512fd2eaf97c44, type: 3}
+  - {fileID: 8300000, guid: a71a3d0fdcbe6514f98cf764484ee43b, type: 3}
+  - {fileID: 8300000, guid: 973e4f288618bc14ba577f180cb4c98a, type: 3}
+  resetSounds:
+  - {fileID: 8300000, guid: 6d71549c1eed44047958a70fe7e907a0, type: 3}
+  - {fileID: 8300000, guid: 4da5a455b38934144a01764307a9c273, type: 3}
+  - {fileID: 8300000, guid: 681e2032ba676af4d93a27bec6e24c14, type: 3}
+  - {fileID: 8300000, guid: aaffbeadf69f6d749b089e11af38fe6c, type: 3}
 --- !u!114 &4601007922727000331
 MonoBehaviour:
   m_ObjectHideFlags: 0

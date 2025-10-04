@@ -16,11 +16,11 @@ public class GameManager : MonoBehaviour
     [Header("Victory Settings")]
     public float victoryDelay = 2.0f; // Time to show victory before reset
     public bool autoResetOnVictory = true;
-    
+
     [Header("Audio")]
-    public AudioClip victorySound;
-    public AudioClip placeTileSound;
-    public AudioClip resetSound;
+    public List<AudioClip> victorySounds = new List<AudioClip>();
+    public List<AudioClip> placeTileSounds = new List<AudioClip>();
+    public List<AudioClip> resetSounds = new List<AudioClip>();
 
     private List<GameObject> currentTiles = new List<GameObject>();
     private List<TileInitialState> initialTileStates = new List<TileInitialState>();
@@ -168,10 +168,7 @@ public class GameManager : MonoBehaviour
         }
 
         // Play sound
-        if (placeTileSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(placeTileSound);
-        }
+        PlayRandomSound(placeTileSounds);
 
         // Trigger win condition check
         if (WinCondition.Instance != null)
@@ -190,10 +187,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("🎉 VICTORY! Puzzle solved!");
 
         // Play victory sound
-        if (victorySound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(victorySound);
-        }
+        PlayRandomSound(victorySounds);
 
         // Start victory sequence
         if (autoResetOnVictory)
@@ -274,10 +268,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Resetting level...");
 
         // Play reset sound
-        if (resetSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(resetSound);
-        }
+        PlayRandomSound(resetSounds);
 
         // Destroy current tiles
         foreach (GameObject tile in currentTiles)
@@ -335,12 +326,12 @@ public class GameManager : MonoBehaviour
             new Vector2(1, 1),
             new Vector2(-1, 1)
         };
-        
+
         WinCondition.Instance.SetTargetOutline(squareOutline);
-        
+
         // Add a color target in the center (should be yellow = red + green)
         WinCondition.Instance.AddColorTarget(Vector2.zero, Color.yellow);
-        
+
         Debug.Log("✓ Test level configured: 2x2 square with yellow center");
     }
 
@@ -350,10 +341,26 @@ public class GameManager : MonoBehaviour
     public void LoadLevel(int levelNumber)
     {
         Debug.Log($"Loading level {levelNumber}...");
-        
+
         // You would implement level-specific configurations here
         // For now, just reset
         ResetLevel();
+    }
+
+    /// <summary>
+    /// Play a random sound from the provided list of audio clips.
+    /// </summary>
+    /// <param name="sounds">List of AudioClip items</param>
+    private void PlayRandomSound(List<AudioClip> sounds)
+    {
+        if (sounds == null || sounds.Count == 0 || audioSource == null)
+        {
+            Debug.Log($"[GameManager] No AudioClip or audioSource set, failed to play {sounds}");
+            return;
+        }
+
+        int i = Random.Range(0, sounds.Count);
+        audioSource.PlayOneShot(sounds[i]);
     }
 }
 
