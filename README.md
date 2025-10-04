@@ -1,21 +1,27 @@
-# Chromatiles
-A colourful new spin on tangram puzzles - a mobile puzzle game with colour mixing mechanics
-
 # 🎨 Chromatiles
 
-**A colourful new spin on an old classic**
+**A colourful spin on a classic puzzle.**
 
-Chromatiles takes the traditional tangram puzzle and revolutionizes it with innovative color-mixing mechanics. Players arrange translucent, colored tiles that can overlap to create new colors, solving both shape and color-matching challenges in this unique puzzle experience.
-
-![Game Concept](docs/assets/concept-preview.png)
-*Concept: Traditional tangram meets additive color mixing*
-<img width="510" height="318" alt="image" src="https://github.com/user-attachments/assets/66205005-1059-4d4e-a032-5650b5ebff1c" />
-<img width="453" height="282" alt="image" src="https://github.com/user-attachments/assets/618c1620-ec31-4601-8316-2cb8db4cf9cc" />
-<img width="478" height="289" alt="image" src="https://github.com/user-attachments/assets/0b79f263-e820-4bf5-a808-d6d6222c0fe6" />
+Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Players arrange coloured tiles to fit within an outline, but unlike the traditional style, the pieces are translucent and can overlap. Overlapping shapes blend their colours, creating new shades that must match the target regions inside the outline. This mechanic transforms a simple shape-fitting exercise into a visually stimulating and mentally engaging puzzle experience. 
 
 
+## 📄 Documentation
 
+- [Game Design Document](https://d2l.deakin.edu.au/d2l/home/1544115) - Complete design specification
+- [Worksheet 1](https://d2l.deakin.edu.au/d2l/home/1544115) - Game Theory And Strategy Worksheet & Checklist
+- [Worksheet 2](https://d2l.deakin.edu.au/d2l/home/1544115) - Feedback and Balance Worksheet & Checklist
+- [AGILE Documentation](https://d2l.deakin.edu.au/d2l/lms/discussions/messageLists/frame.d2l?ou=1544115&tId=973841&fId=0&threadId=0&postId=0&groupFilterOption=0) - Weekly submissions showing progress over the weeks
+- [Chromatiles](https://d2l.deakin.edu.au/d2l/home/1544115) - Executable game build
+- [Unity Project](https://d2l.deakin.edu.au/d2l/home/1544115) - Chromatiles project (only Assets and ProjectSettings files uploaded to CloudDeakin due to filesize limits)
+- [Video Demo](panopto TBD) - Video showing gameplay and solutions to each puzzle
 
+## 📞 Prototype Team
+
+- s223387609 (Daniel Soutar)
+- LordofSpirals (Darren Copley)
+- sekibayashi00 (Diing Jok)
+- (Mati Ur Rehman) 
+  
 ## 🎮 Game Overview
 
 ### Core Innovation
@@ -30,59 +36,50 @@ Chromatiles takes the traditional tangram puzzle and revolutionizes it with inno
 - **Flexible Tile System**: Not limited to traditional 7-piece sets
 - **Multiple Difficulty Layers**: Extra tiles, color complexity, time challenges
 
-## 🎯 Target Audience
+## 🚀 Prototype Timeline
 
-| Audience | Demographics | Platform | Motivation |
-|----------|--------------|----------|------------|
-| **Primary** | Female 45-55+ (70/30 split) | Mobile/Tablet at home | Brain training, casual entertainment |
-| **Secondary** | 25-35 commuters (60/40 split) | Mobile during commute | Quick daily routine, achievement |
-| **Tertiary** | 20-30 social players (50/50 split) | Mobile/social sharing | Trending games, social media sharing |
-
-## 🚀 Development Timeline
-
-### Phase 1: Foundation (Weeks 1-2) 
+### Foundation (Weeks 1) 
 - [x] Game design document completed
-- [ ] Select game engine (Unity/Godot evaluation)
-- [ ] Finalize art style and color system
-- [ ] Set up development environment
+- [x] Select game engine (Unity/Godot evaluation)
+- [x] Set up development environment
 
-### Phase 2: Core Prototype (Weeks 2-4)
-- [ ] Implement tangram tile system
-- [ ] Build color mixing mechanics
-- [ ] Create outline detection system
-- [ ] Develop level creation tools
-- [ ] Design initial 25 levels
+### Core Prototype 1/2 (Week 2)
+- [x] Implement tangram tile system
+- [x] Shape drag and rotate system
 
-### Phase 3: MVP (Weeks 5-8)
-- [ ] Level progression and unlocking
-- [ ] UI/UX implementation
-- [ ] Audio integration (SFX + music)
-- [ ] Save system and settings
-- [ ] Basic tutorial system
+### Core Prototype 2/2 (Week 3)
+- [x] Build color blending mechanics
+- [x] Create outline detection system
+- [x] Design initial 5 levels
 
-### Phase 4: Enhancement (Weeks 9-12)
-- [ ] Daily puzzle system
-- [ ] Challenge mode with timer
-- [ ] Additional level sets
-- [ ] Polish and optimization
+### Enhancement and Polish (Week 4-5)
+- [x] Basic tutorial instructions / introduction
+- [x] Level progression
+- [x] Audio integration (SFX)
+- [x] UI/UX implementation
+- [x] Bugfixes and internal playtesting
+- [x] External playtesting 
+- [x] Further polish and optimization
 
 ## 🛠️ Technical Specifications
 
 ### Platforms
-- **Primary**: iOS (iPhone/iPad), Android (Phone/Tablet)
-- **Future**: Steam (PC), Nintendo Switch, Web (HTML5)
+- **Prototype**: PC
+- **Future**:
+-   *Main platforms*: iOS and Android.
+-   *Future ports*: PC and console, though they would need different control schemes. 
 
 ### Core Systems
 - **Puzzle Engine**: Shape detection and validation
 - **Color Mixer**: Additive RGB color blending
-- **Level Manager**: Progression and unlock system
-- **Audio Manager**: Dynamic SFX and background music
+- **Level Manager**: Progression system
+- **Audio Manager**: Dynamic SFX
 
 ### Development Tools
-- **Game Engine**: TBD (Unity 2022.3+ vs Godot 4.0+)
-- **Level Editor**: Custom in-engine tool
-- **Version Control**: Git with GitHub
-- **Analytics**: TBD (Firebase/GameAnalytics)
+- **Game Engine**: Unity v6000.0.40f1
+- **Level Editor**: In-engine tools
+- **Version Control**: Git + GitHub
+- **Playtesting**: Both internal and external (managed by lead playtester - Daniel Soutar)
 
 ## 🎨 Art & Design Philosophy
 
@@ -98,7 +95,7 @@ Chromatiles takes the traditional tangram puzzle and revolutionizes it with inno
 - **Bartle Types**: Appeals to Achievers and Explorers
 - **Daily Engagement**: Wordle-inspired return mechanics
 
-## 📱 Monetization Strategy
+## 📱 Monetization Strategy (extending beyond Prototype)
 
 - **Free-to-Play**: Easy entry for viral growth
 - **Ad-Supported**: Interstitial and reward videos
@@ -118,26 +115,16 @@ Chromatiles takes the traditional tangram puzzle and revolutionizes it with inno
 - **Color Puzzles**: Lack tangram's spatial challenge
 - **Opportunity**: First to combine both mechanics effectively
 
-## 🤝 Contributing
+## 🎯 Target Audience
 
-This project is currently in early development. Contributions welcome for:
-- Level design ideas
-- Color theory consultation  
-- UI/UX feedback
-- Technical implementation suggestions
+| Audience | Demographics | Platform | Motivation |
+|----------|--------------|----------|------------|
+| **Primary** | Female 45-55+ (70/30 split) | Mobile/Tablet at home | Brain training, casual entertainment |
+| **Secondary** | 25-35 commuters (60/40 split) | Mobile during commute | Quick daily routine, achievement |
+| **Tertiary** | 20-30 social players (50/50 split) | Mobile/social sharing | Trending games, social media sharing |
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## 📄 Documentation
-
-- [Game Design Document](docs/design/game-design-document.md) - Complete design specification
-- [Technical Requirements](docs/development/technical-requirements.md) - Engine and platform specs
-- [Art Style Guide](docs/design/art-style-guide.md) - Visual design standards
-- [Development Setup](docs/development/setup-guide.md) - How to build and run
-
-## 📞 Contact & Links
-
-- **Developer**: [Darren Copley],(Diing Jok) and (Mati Ur Rehman)(https://github.com/sekibayashi00)
-- **Repository**: https://github.com/sekibayashi00/Chromatiles
-- **Issues**: [Report bugs or suggest features](https://github.com/sekibayashi00/Chromatiles/issues)
-
+## 🖼️ Game Moodboard / Concept Art
+*Concept: Traditional tangram meets additive color mixing*
+<img width="510" height="318" alt="image" src="https://github.com/user-attachments/assets/66205005-1059-4d4e-a032-5650b5ebff1c" />
+<img width="453" height="282" alt="image" src="https://github.com/user-attachments/assets/618c1620-ec31-4601-8316-2cb8db4cf9cc" />
+<img width="478" height="289" alt="image" src="https://github.com/user-attachments/assets/0b79f263-e820-4bf5-a808-d6d6222c0fe6" />
