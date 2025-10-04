@@ -20,7 +20,15 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
 - s223387609 (Daniel Soutar)
 - LordofSpirals (Darren Copley)
 - sekibayashi00 (Diing Jok)
-- (Mati Ur Rehman) 
+- (Mati Ur Rehman)
+
+## 🖼️ Game Screenshots
+*This is only some of the levels! Play the game to see everything there is to offer :)*
+
+<img width="510" height="318" alt="Level 1 Start" src="Screenshots/level1start.jpg" />
+<img width="510" height="318" alt="Level 1 End" src="Screenshots/level1end.jpg" />
+<img width="510" height="318" alt="Level 2" src="Screenshots/level2.jpg" />
+<img width="510" height="318" alt="Level 3" src="Screenshots/level3.jpg" />
   
 ## 🎮 Game Overview
 
@@ -125,6 +133,7 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
 
 ## 🖼️ Game Moodboard / Concept Art
 *Concept: Traditional tangram meets additive color mixing*
+
 <img width="510" height="318" alt="image" src="https://github.com/user-attachments/assets/66205005-1059-4d4e-a032-5650b5ebff1c" />
 <img width="453" height="282" alt="image" src="https://github.com/user-attachments/assets/618c1620-ec31-4601-8316-2cb8db4cf9cc" />
 <img width="478" height="289" alt="image" src="https://github.com/user-attachments/assets/0b79f263-e820-4bf5-a808-d6d6222c0fe6" />
