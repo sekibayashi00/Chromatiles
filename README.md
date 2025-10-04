@@ -25,10 +25,10 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
 ## 🖼️ Game Screenshots
 *This is only some of the levels! Play the game to see everything there is to offer :)*
 
-<img width="510" height="318" alt="Level 1 Start" src="Screenshots/level1start.jpg" />
-<img width="510" height="318" alt="Level 1 End" src="Screenshots/level1end.jpg" />
-<img width="510" height="318" alt="Level 2" src="Screenshots/level2.jpg" />
-<img width="510" height="318" alt="Level 3" src="Screenshots/level3.jpg" />
+<img alt="Level 1 Start" src="Screenshots/level1start.jpg" />
+<img alt="Level 1 End" src="Screenshots/level1end.jpg" />
+<img alt="Level 2" src="Screenshots/level2.jpg" />
+<img alt="Level 3" src="Screenshots/level3.jpg" />
   
 ## 🎮 Game Overview
 
