@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -79,6 +80,7 @@ public class GameManager : MonoBehaviour
         {
             WinCondition.Instance.onWinConditionMet.RemoveListener(OnVictory);
         }
+        if (Instance == this) Instance = null;
     }
 
     // Update the currentTilesGrabbed list from the tiles we have in the current game - tracking their grab/release state
@@ -230,6 +232,12 @@ public class GameManager : MonoBehaviour
         ResetLevel();
 
         isVictorySequencePlaying = false;
+
+        // Proceed to the next level, by incrementing the scene list index (from Build Profiles > Scene List, the order of levels defined there)
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        int nextScene = currentScene + 1;
+        if (nextScene > SceneManager.sceneCountInBuildSettings) nextScene = 0; // loop back to menu on final puzzle completion
+        SceneManager.LoadScene(nextScene);
     }
 
     /// <summary>

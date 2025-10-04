@@ -47,6 +47,7 @@ public class WinCondition : MonoBehaviour
             Instance = this;
         }
     }
+    void OnDestroy() { if (Instance == this) Instance = null; } // Ensure only one instance exists across scene progression between levels
 
     void Start()
     {
