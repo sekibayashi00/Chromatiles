@@ -7,28 +7,38 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
 
 ## 📄 Documentation
 
-- [Game Design Document](https://d2l.deakin.edu.au/d2l/home/1544115) - Complete design specification
-- [Worksheet 1](https://d2l.deakin.edu.au/d2l/home/1544115) - Game Theory And Strategy Worksheet & Checklist
-- [Worksheet 2](https://d2l.deakin.edu.au/d2l/home/1544115) - Feedback and Balance Worksheet & Checklist
-- [AGILE Documentation](https://d2l.deakin.edu.au/d2l/lms/discussions/messageLists/frame.d2l?ou=1544115&tId=973841&fId=0&threadId=0&postId=0&groupFilterOption=0) - Weekly submissions showing progress over the weeks
-- [Chromatiles](https://d2l.deakin.edu.au/d2l/home/1544115) - Executable game build
-- [Unity Project](https://d2l.deakin.edu.au/d2l/home/1544115) - Chromatiles project (only Assets and ProjectSettings files uploaded to CloudDeakin due to filesize limits)
-- [Video Demo](panopto TBD) - Video showing gameplay and solutions to each puzzle
+- **Game Design Document** [[File submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Complete design specification  *(uploader: Daniel Soutar)*
+- **Worksheet 1** [[File submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Game Theory And Strategy Worksheet & Checklist
+- **Worksheet 2** [[File submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Feedback and Balance Worksheet & Checklist
+- **AGILE Documentation** [[Discussion Forum on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/lms/discussions/messageLists/frame.d2l?ou=1544115&tId=973841&fId=0&threadId=0&postId=0&groupFilterOption=0)] - Weekly submissions showing progress *(Assessment 2 Group 3)*
+- **Chromatiles.exe** [[Game submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Executable game build packaged in .zip
+- **Unity Project** [[Game submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Chromatiles project (only Assets and ProjectSettings files uploaded to CloudDeakin due to filesize limits)
+- **Video Demo** [[Panopto](https://deakin.au.panopto.com/Panopto/Pages/Viewer.aspx?id=cd74722c-089a-44ad-a6c0-b36c00ae62f1)] - Video showing gameplay and solutions to each puzzle
+  *Uploader for all CloudDeakin items: Daniel Soutar, s223387609*
+
+## 🔎 References
+
+- [**Outfit**](https://github.com/Outfitio/Outfit-Fonts) font used for all in-game text
+  - Licensed under [SIL Open Font License, Version 1.1.](http://scripts.sil.org/OFL)   ([Assets/Fonts/LICENSE.txt](Assets/Fonts/LICENSE.txt))
+- [**Interface Sounds**](https://kenney.nl/assets/interface-sounds) by [Kenney](https://kenney.nl/), used for all in-game audio (*Victory*, *Place Tile* and *Reset* sound effects)
+  - Licensed under [Creative Commons Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/)   ([Assets/Audio/kenney_interface-sounds/License.txt](Assets/Audio/kenney_interface-sounds/License.txt))
 
 ## 📞 Prototype Team
 
-- s223387609 (Daniel Soutar)
-- LordofSpirals (Darren Copley)
-- sekibayashi00 (Diing Jok)
+- [s223387609](https://github.com/s223387609) (Daniel Soutar)
+- [LordofSpirals](https://github.com/LordofSpirals) (Darren Copley)
+- [sekibayashi00](https://github.com/sekibayashi00) (Diing Jok)
 - (Mati Ur Rehman)
 
 ## 🖼️ Game Screenshots
-*This is only some of the levels! Play the game to see everything there is to offer :)*
+*These are only some of the levels! Play the game to see everything there is to offer :)*
 
-<img alt="Level 1 Start" src="Screenshots/level1start.jpg" />
-<img alt="Level 1 End" src="Screenshots/level1end.jpg" />
-<img alt="Level 2" src="Screenshots/level2.jpg" />
-<img alt="Level 3" src="Screenshots/level3.jpg" />
+<div style="display: grid; grid-template-columns: repeat(2, 1); gap: 10px;">
+  <img width="386" height="401" alt="Level 1 Start" src="Screenshots/level1start.jpg" />
+  <img width="386" height="401" alt="Level 1 End" src="Screenshots/level1end.jpg" />
+  <img width="386" height="401" alt="Level 2" src="Screenshots/level2.jpg" />
+  <img width="386" height="401" alt="Level 3" src="Screenshots/level3.jpg" />
+</div>
   
 ## 🎮 Game Overview
 
@@ -74,8 +84,8 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
 ### Platforms
 - **Prototype**: PC
 - **Future**:
--   *Main platforms*: iOS and Android.
--   *Future ports*: PC and console, though they would need different control schemes. 
+  - *Main platforms*: iOS and Android.
+  - *Future ports*: PC and console, though they would need different control schemes.
 
 ### Core Systems
 - **Puzzle Engine**: Shape detection and validation
