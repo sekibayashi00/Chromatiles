@@ -318,7 +318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616239097415194557, guid: 83466664a1554e441b7cb4c6ec7b3a7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 8616239097415194557, guid: 83466664a1554e441b7cb4c6ec7b3a7a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -326,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616239097415194557, guid: 83466664a1554e441b7cb4c6ec7b3a7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 8616239097415194557, guid: 83466664a1554e441b7cb4c6ec7b3a7a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1004,22 +1004,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2761482129282630484, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
-      propertyPath: tileSpacing
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2761482129282630484, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
-      propertyPath: tileSpawnOffset.x
-      value: -7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2761482129282630484, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
-      propertyPath: tileSpawnOffset.z
-      value: -3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2761482129282630484, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
-      propertyPath: autoResetOnVictory
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2761482129282630484, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
       propertyPath: tilePrefabs.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1058,10 +1042,6 @@ PrefabInstance:
     - target: {fileID: 4601007922727000331, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
       propertyPath: showDebugVisuals
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4601007922727000331, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
-      propertyPath: outlineMatchThreshold
-      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4601007922727000331, guid: 4a256c54c3ac3014e9e4677271cdeb38, type: 3}
       propertyPath: colorTargets.Array.size

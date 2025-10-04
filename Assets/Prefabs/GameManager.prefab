@@ -45,15 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3307fee7a69af164ebf713a66bf64003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilePrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tilePrefabs: []
   tileSpawnParent: {fileID: 6070367585493323571}
-  tileSpawnOffset: {x: -3, y: 0, z: 0}
-  tileSpacing: 1.5
+  tileSpawnOffset: {x: -4, y: 0, z: -4}
+  tileSpacing: 0.67
   victoryDelay: 2
   autoResetOnVictory: 1
   victorySound: {fileID: 0}
@@ -76,7 +71,7 @@ MonoBehaviour:
   checkDelay: 0.1
   targetTileObjects: []
   targetPointFilterThreshold: 0.05
-  outlineMatchThreshold: 0.15
+  outlineMatchThreshold: 0.22
   requiredOutlineMatchPercentage: 0.95
   colorTargets: []
   colorMatchTolerance: 0.15
