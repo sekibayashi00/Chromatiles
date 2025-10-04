@@ -21,6 +21,7 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
   - Select "More info" > "Run anyway"
 - **Unity Project** [[Game submission on CloudDeakin SIT254](https://d2l.deakin.edu.au/d2l/home/1544115)] - Chromatiles project (only Assets and ProjectSettings files uploaded to CloudDeakin due to filesize limits)
 - **Video Demo** [[Panopto](https://deakin.au.panopto.com/Panopto/Pages/Viewer.aspx?id=cd74722c-089a-44ad-a6c0-b36c00ae62f1)] - Video showing gameplay and solutions to each puzzle
+
   *Uploader for all CloudDeakin items: Daniel Soutar, s223387609*
 
 ## 🔎 References
