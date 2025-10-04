@@ -339,7 +339,7 @@ public class WinCondition : MonoBehaviour
             }
         }
 
-        Debug.Log($"Total tiles: {allTiles.Length}");
+        // Debug.Log($"Total tiles: {allTiles.Length}");
 
         return vertices;
     }

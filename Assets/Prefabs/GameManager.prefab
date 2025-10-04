@@ -74,15 +74,10 @@ MonoBehaviour:
   checkOutline: 1
   checkColors: 0
   checkDelay: 0.1
-  targetOutlineTileObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  targetPointFilterThreshold: 0.01
-  outlineMatchThreshold: 0.1
-  requiredOutlineMatchPercentage: 0.8
+  targetTileObjects: []
+  targetPointFilterThreshold: 0.05
+  outlineMatchThreshold: 0.15
+  requiredOutlineMatchPercentage: 0.95
   colorTargets: []
   colorMatchTolerance: 0.15
   showDebugVisuals: 1
