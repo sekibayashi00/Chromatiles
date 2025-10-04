@@ -58,9 +58,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 05d0fcef38a43724e9a5e839edc78ccb, type: 3}
   placeTileSounds:
   - {fileID: 8300000, guid: ca02b2177f2a11d43891fc50f14585a5, type: 3}
-  - {fileID: 8300000, guid: a23bf60cca3da654d9382dcc1a4d7aaa, type: 3}
   - {fileID: 8300000, guid: 5f5f6594d663e1f4e8b18c84c117016b, type: 3}
-  - {fileID: 8300000, guid: df2ee3a2d9fe14b42bb0acaaa8a0db52, type: 3}
   - {fileID: 8300000, guid: 68d68aaf15c338b42968e0abb68dda6b, type: 3}
   - {fileID: 8300000, guid: eb5da0ec0d8555444b512fd2eaf97c44, type: 3}
   - {fileID: 8300000, guid: a71a3d0fdcbe6514f98cf764484ee43b, type: 3}
