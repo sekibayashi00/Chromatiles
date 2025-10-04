@@ -48,7 +48,7 @@ Chromatiles is a puzzle game which re-imagines the classic tangram challenge. Pl
 - **Dual Challenge System**: Match both the target outline AND the target colors
 - **Progressive Complexity**: From simple shapes to complex multi-color patterns
 
-### Key Features
+### Key Features beyond Prototype (for extended Initial Release)
 - **25+ Handcrafted Levels**: Carefully designed progressive difficulty curve
 - **Daily Puzzle Mode**: New challenge every day (Wordle-style engagement)
 - **Flexible Tile System**: Not limited to traditional 7-piece sets
